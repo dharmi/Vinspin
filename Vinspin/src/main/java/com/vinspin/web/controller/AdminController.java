@@ -23,7 +23,7 @@ import com.vinspin.model.form.UserInfo;
 import com.vinspin.service.AdminService;
 
 @Controller
-@SessionAttributes({"loginFormAttrib"})
+@SessionAttributes({"loginFormAttrib"}) 
 public class AdminController {
 
 	@Autowired
@@ -33,7 +33,7 @@ public class AdminController {
 
 	@RequestMapping(value = "/login.htm", method=RequestMethod.GET)
 	public String loginForm(Model model) {
-		System.out.println("AdminController :: loginForm");
+		System.out.println("AdminController :: loginForm123");
 		model.addAttribute("login", new Login());
 		return "login";
 	}
